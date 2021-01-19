@@ -35,3 +35,4 @@ Feature: Manage Customers
         Given Customer [id=1] exists in the database
         When I send requests to delete customer [id=1]
         Then I recieve a response that a customer deletion was a success
+        And I recieve a response the customer does not exist
